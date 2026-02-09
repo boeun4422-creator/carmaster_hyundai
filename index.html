@@ -42,34 +42,34 @@
 
   <style>
     :root{
-      --bg:#0b1220;
-      --card:#121b2f;
-      --text:#eaf0ff;
-      --muted:#b9c3e6;
-      --line:rgba(255,255,255,.12);
-      --accent:#4aa3ff;
-      --accent2:#76ffd1;
-      --shadow: 0 10px 30px rgba(0,0,0,.35);
-      --radius: 18px;
-      --max: 980px;
+    --bg:#f6f8fc;
+    --card:#ffffff;
+    --text:#0f172a;
+    --muted:#475569;
+    --line:rgba(15,23,42,.10);
+    --accent:#0ea5e9;
+    --accent2:#2563eb;
+    --shadow: 0 10px 24px rgba(2,6,23,.08);
+    --radius: 18px;
+    --max: 980px;
     }
     *{box-sizing:border-box}
-    body{
-      margin:0;
-      font-family: ui-sans-serif, system-ui, -apple-system, "Apple SD Gothic Neo", "Noto Sans KR", Segoe UI, Roboto, Arial, sans-serif;
-      color:var(--text);
-      background:
-        radial-gradient(1200px 600px at 15% 10%, rgba(74,163,255,.25), transparent 60%),
-        radial-gradient(900px 500px at 85% 20%, rgba(118,255,209,.14), transparent 55%),
-        linear-gradient(180deg, var(--bg), #070b14 80%);
-      line-height:1.55;
+   body{
+  margin:0;
+  font-family: ui-sans-serif, system-ui, -apple-system, "Apple SD Gothic Neo", "Noto Sans KR", Segoe UI, Roboto, Arial, sans-serif;
+  color:var(--text);
+  background:
+    radial-gradient(900px 500px at 10% 0%, rgba(14,165,233,.18), transparent 55%),
+    radial-gradient(700px 420px at 90% 10%, rgba(37,99,235,.12), transparent 55%),
+    linear-gradient(180deg, var(--bg), #ffffff 65%);
+  line-height:1.7;
     }
     a{color:inherit}
     .wrap{max-width:var(--max); margin:0 auto; padding:24px}
     .nav{
       position:sticky; top:0; z-index:10;
       backdrop-filter: blur(10px);
-      background: rgba(11,18,32,.65);
+      background: rgba(246,248,252,.82);
       border-bottom:1px solid var(--line);
     }
     .nav-inner{
@@ -90,7 +90,7 @@
       padding:14px 16px;
       border-radius:14px;
       border:1px solid rgba(255,255,255,.14);
-      background: linear-gradient(135deg, rgba(74,163,255,.25), rgba(118,255,209,.15));
+      background: linear-gradient(135deg, rgba(14,165,233,.16), rgba(37,99,235,.10));
       box-shadow: var(--shadow);
       text-decoration:none;
       font-weight:800;
@@ -111,13 +111,13 @@
       font-size:13px;
     }
     h1{
-      margin:14px 0 8px;
+      margin:14px 0 10px;
       font-size: clamp(28px, 5vw, 44px);
       line-height:1.15;
       letter-spacing:-0.8px;
     }
     .sub{
-      margin:0 0 18px;
+      margin:0 0 22px;
       color:var(--muted);
       font-size: clamp(15px, 2.4vw, 18px);
       max-width: 58ch;
@@ -133,7 +133,7 @@
       .nav-links{display:none}
     }
     .card{
-      background: rgba(18,27,47,.76);
+      background: var(--card);
       border: 1px solid var(--line);
       border-radius: var(--radius);
       padding: 18px;
@@ -366,5 +366,6 @@
   </div>
 </body>
 </html>
+
 
 
