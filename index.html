@@ -237,6 +237,24 @@
   object-fit: cover;
   display: block;
 }
+/* === FORCE FULL-WIDTH HERO IMAGE (override) === */
+.hero-image{
+  width: 100vw !important;
+  margin-left: calc(50% - 50vw) !important;
+  margin-right: calc(50% - 50vw) !important;
+  margin-top: 28px !important;
+  margin-bottom: 36px !important;
+  border-radius: 0 !important;
+  overflow: hidden !important;
+  box-shadow: none !important;
+}
+
+.hero-image img{
+  width: 100% !important;
+  height: 420px !important;
+  object-fit: cover !important;
+  display: block !important;
+}
 
 
   </style>
@@ -388,6 +406,7 @@
   </div>
 </body>
 </html>
+
 
 
 
